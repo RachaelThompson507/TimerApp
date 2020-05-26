@@ -3,6 +3,14 @@
 
 ## Tech Stack
 1. Vanilla JS
-2. HTML 5 
+2. HTML 5
 3. CSS 3
-4. Git 
+4. Git
+
+## Timer App Features
+- Start
+- Pause
+- Animation
+
+## Things I have learned:
+- When creating a callback function in your class, you can't call the callback or it creates a bug 🐞
