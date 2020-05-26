@@ -20,8 +20,21 @@ class Timer {
     }
 
     tick = () => {
-        console.log('tick');
+        //console.log('tick');
+        if(this.timeRemaining <=0){
+            this.pause();
+        } else {
+            this.timeRemaining = this.timeRemaining -1 ;
+        }
     };
+
+    get timeRemaining() {
+        return parseFloat(this.durationInput.value);
+    }
+
+    set timeRemaining(time) {
+        return this.durationInput.value = time;
+    }
 }
 
 const durationInput = document.querySelector('#duration');
